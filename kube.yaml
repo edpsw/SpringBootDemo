@@ -18,6 +18,9 @@ kind: Deployment
 metadata:
   name: maven-deployment
 spec:
+  selector:
+    matchLabels:
+      app: maven
   replicas: 1
   template:
     metadata:
